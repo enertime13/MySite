@@ -1,0 +1,221 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #000;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background: linear-gradient(45deg, transparent 30%, #FF0000 50%, transparent 70%);
+    animation: shine 3s infinite linear;
+    background-size: 400% 400%;
+    animation: redFlow 10s ease infinite;
+    text-align: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid red;
+}
+
+@keyframes redFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 15px;
+    color: #FFFFFF
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header p {
+    font-size: 1.3em;
+    color: #aaa;
+    font-style: italic;
+    position: relative;
+    z-index: 1;
+}
+
+.about {
+    padding: 80px 0;
+    background: #111;
+	align-items: left;
+    gap: 50px;
+}
+.about-wapper{
+	display: flex;
+	gap: 40px;
+	
+}
+.about h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    color: red; 
+    border-bottom: 3px solid #FFFAFA;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.about-content {
+	flex: 3;
+	display: flex;
+    align-items: center;
+    gap: 50px;
+    background: #111;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 5px 15px rgba(214, 158, 46, 0.1);
+    border: 2px solid red;
+}
+
+.about-content img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #000000; 
+}
+
+.about-text p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #ccc;
+}
+
+.about-sidebar{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.info-cart{
+	list-style: none;
+	background: #111;
+	border: 10px solid #000000;
+	
+}
+
+.hobbies {
+    padding: 80px 0;
+    background: #000;
+}
+
+.hobbies h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 60px;
+    color: #ff0000; 
+    border-bottom: 3px solid #FFFAFA;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.hobbies-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.hobby {
+    background: #111;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid #ff0000;
+    transition: all 0.3s ease;
+}
+
+.hobby:hover {
+    transform: translateY(-5px);
+    border-color: #FFFAFA;
+    box-shadow: 0 5px 15px rgba(255, 0, 0, 0.3);
+}
+
+.hobby h3 {
+    color: #FFFAFA; 
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.hobby p {
+    color: #ccc;
+    font-size: 1em;
+	
+}
+
+.hobby-icon{
+	width: 30px;
+	height: 30px;
+	margin-right: 10px;
+	vertical-align: middle;
+	
+}
+
+footer {
+    background: #222;
+    padding: 60px 0 30px;
+    text-align: center;
+    border-top: 5px solid black;
+}
+
+footer h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #ff0000; 
+}
+
+.contacts {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.contacts p {
+    background: #000;
+    padding: 15px 30px;
+    border-radius: 5px;
+    color: #FFFAFA; 
+    border: 2px solid #ff0000;
+    transition: all 0.3s ease;
+}
+
+.contacts p:hover {
+    background: #ff0000; 
+    color: #000; 
+    border-color: #FFFAFA; 
+}
+
+.copyright {
+    margin-top: 30px;
+    color: #888;
+    font-size: 0.9em;
+}
+
+
+@media (max-width: 900px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .about-content img {
+        width: 200px;
+        height: 200px;
+    }
+}
