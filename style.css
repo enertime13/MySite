@@ -19,7 +19,6 @@ body {
 
 header {
     background: linear-gradient(45deg, transparent 30%, #FF0000 50%, transparent 70%);
-    animation: shine 3s infinite linear;
     background-size: 400% 400%;
     animation: redFlow 10s ease infinite;
     text-align: center;
@@ -219,3 +218,4 @@ footer h2 {
         height: 200px;
     }
 }
+
